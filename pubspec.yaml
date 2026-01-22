@@ -1,0 +1,26 @@
+name: calendar_app
+description: A simple calendar app with Flutter for HarmonyOS
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  table_calendar: ^3.0.8       # 日历视图组件
+  flutter_local_notifications: ^16.1.0  # 本地通知（提醒功能）
+  intl: ^0.18.1                # 日期格式化
+  hive: ^2.2.3                 # 本地数据库
+  hive_flutter: ^1.1.0         # Hive的Flutter适配
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.6         # 生成Hive适配器
+  hive_generator: ^2.0.1       # Hive代码生成器
+
+flutter:
+  uses-material-design: true   # 启用Material Design组件
